@@ -1,0 +1,795 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Disclaimer | Gaming Discovery</title>
+
+    <meta name="description"
+          content="Read our website disclaimer, third-party content disclosures, intellectual property information and legal limitations.">
+
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        /* PAGE BANNER */
+
+        .policy-banner {
+            position: relative;
+            padding: 85px 20px;
+            text-align: center;
+            overflow: hidden;
+
+            background:
+                radial-gradient(
+                    ellipse at top left,
+                    rgba(120,40,245,0.25),
+                    transparent 55%
+                ),
+                radial-gradient(
+                    ellipse at bottom right,
+                    rgba(236,50,213,0.15),
+                    transparent 50%
+                ),
+                #141827;
+
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .policy-banner h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(32px, 5vw, 58px);
+            font-weight: 700;
+
+            background: linear-gradient(
+                90deg,
+                #26E4DC,
+                #A9A0FF,
+                #F05BD8
+            );
+
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 14px;
+        }
+
+        .policy-banner p {
+            font-size: 14px;
+            color: #B5B9CB;
+        }
+
+
+        /* BREADCRUMB */
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 12px;
+            margin-bottom: 20px;
+            color: #B5B9CB;
+        }
+
+        .breadcrumb a {
+            color: #26E4DC;
+            text-decoration: none;
+        }
+
+
+        /* MAIN CONTENT */
+
+        .policy-section {
+            padding: 45px 20px 70px;
+            background: #141827;
+        }
+
+        .policy-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 45px;
+            background: #1C2134;
+            border: 1px solid rgba(255,255,255,0.10);
+            border-radius: 18px;
+        }
+
+        .policy-date {
+            display: inline-block;
+            background: rgba(120,40,245,0.12);
+            border: 1px solid rgba(120,40,245,0.25);
+            color: #C9A7FF;
+            padding: 7px 15px;
+            border-radius: 30px;
+            font-size: 11px;
+            margin-bottom: 25px;
+        }
+
+        .policy-container h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: #26E4DC;
+            margin-top: 30px;
+            margin-bottom: 12px;
+        }
+
+        .policy-container p {
+            font-size: 14px;
+            line-height: 1.9;
+            color: #C4C8DA;
+            margin-bottom: 15px;
+        }
+
+        .policy-container ul {
+            padding-left: 22px;
+            margin: 12px 0 20px;
+        }
+
+        .policy-container li {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #C4C8DA;
+            margin-bottom: 8px;
+            padding-left: 4px;
+        }
+
+        .policy-container li::marker {
+            color: #A855F7;
+        }
+
+        .policy-container strong {
+            color: #FFFFFF;
+            font-weight: 600;
+        }
+
+        .policy-container a {
+            color: #26E4DC;
+            overflow-wrap: anywhere;
+        }
+
+        .policy-divider {
+            height: 1px;
+            border: none;
+            background: rgba(255,255,255,0.08);
+            margin: 28px 0;
+        }
+
+
+        /* IMPORTANT NOTICE */
+
+        .policy-notice {
+            padding: 22px;
+            margin: 25px 0;
+            background: rgba(120,40,245,0.08);
+            border-left: 3px solid #A855F7;
+            border-radius: 8px;
+        }
+
+        .policy-notice p {
+            margin: 0;
+            color: #DDD3EF;
+        }
+
+
+        /* CONTACT BOX */
+
+        .policy-contact {
+            margin-top: 30px;
+            padding: 25px;
+            background: rgba(120,40,245,0.08);
+            border: 1px solid rgba(168,85,247,0.25);
+            border-radius: 12px;
+        }
+
+        .policy-contact h2 {
+            margin-top: 0;
+        }
+
+        .policy-contact p {
+            margin-bottom: 6px;
+        }
+
+
+        /* BACK TO HOME BUTTON */
+
+        .policy-back {
+            margin-top: 35px;
+            text-align: center;
+        }
+
+        .policy-back a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 28px;
+            border-radius: 9px;
+            color: #FFFFFF;
+
+            background: linear-gradient(
+                110deg,
+                #EC32D5,
+                #7828F5
+            );
+
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .policy-back a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(120,40,245,0.3);
+        }
+
+
+        /* MOBILE RESPONSIVE */
+
+        @media (max-width: 767px) {
+
+            .policy-banner {
+                padding: 45px 18px;
+            }
+
+            .policy-banner h1 {
+                font-size: 36px;
+            }
+
+            .policy-banner p {
+                font-size: 12px;
+            }
+
+            .policy-section {
+                padding: 25px 14px 40px;
+            }
+
+            .policy-container {
+                padding: 22px 18px;
+                border-radius: 12px;
+            }
+
+            .policy-container h2 {
+                font-size: 21px;
+                margin-top: 24px;
+            }
+
+            .policy-container p,
+            .policy-container li {
+                font-size: 13px;
+                line-height: 1.8;
+            }
+
+            .policy-notice {
+                padding: 16px;
+            }
+
+            .policy-contact {
+                padding: 18px;
+            }
+
+            .policy-contact h2 {
+                margin-top: 0;
+            }
+
+            .policy-back a {
+                width: 100%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html"
+               class="logo"
+               aria-label="Homepage">
+
+                <img src="images/logo.png"
+                     alt="Gaming controller logo">
+
+            </a>
+
+            <nav class="navigation" id="navigation">
+
+                <a href="index.html#home" class="nav-link">
+                    Home
+                </a>
+
+                <a href="index.html#discover" class="nav-link">
+                    Discover
+                </a>
+
+                <a href="index.html#trending" class="nav-link">
+                    Games
+                </a>
+
+                <a href="index.html#community" class="nav-link">
+                    Community
+                </a>
+
+                <a href="index.html#blogs" class="nav-link">
+                    Blog
+                </a>
+
+                <a href="contact.html" class="nav-link">
+                    Contact
+                </a>
+
+            </nav>
+
+            <a href="index.html"
+               class="btn primary-btn header-cta">
+
+                Back to Home
+
+            </a>
+
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="navigation">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- PAGE BANNER -->
+
+        <section class="policy-banner">
+
+            <div class="breadcrumb">
+
+                <a href="index.html">Home</a>
+
+                <span>›</span>
+
+                <span>Disclaimer</span>
+
+            </div>
+
+            <h1>Disclaimer</h1>
+
+            <p>
+                Important information regarding our website,
+                content and external services.
+            </p>
+
+        </section>
+
+
+        <!-- DISCLAIMER CONTENT -->
+
+        <section class="policy-section">
+
+            <article class="policy-container">
+
+                <div class="policy-date">
+                    Last Updated: 24-Nov-2026
+                </div>
+
+                <p>
+                    This Disclaimer outlines important information
+                    regarding the use of our website, its content,
+                    visual materials, external links and informational
+                    resources.
+                </p>
+
+                <p>
+                    By accessing this website, you acknowledge that
+                    you have read and understood the information
+                    provided in this Disclaimer.
+                </p>
+
+                <hr class="policy-divider">
+
+
+                <h2>1. General Information</h2>
+
+                <p>
+                    The information available on this website is
+                    intended for general informational and
+                    entertainment purposes.
+                </p>
+
+                <p>
+                    Nothing published on this website should be
+                    interpreted as professional financial, legal,
+                    investment or other regulated advice.
+                </p>
+
+
+                <h2>2. Accuracy of Information</h2>
+
+                <p>
+                    While reasonable efforts are made to provide
+                    accurate and relevant information, we do not
+                    guarantee that all website content is complete,
+                    current or free from errors.
+                </p>
+
+                <p>
+                    Information relating to games, digital platforms,
+                    features and availability may change over time.
+                    Users are encouraged to verify important
+                    information through official sources.
+                </p>
+
+
+                <h2>3. Illustrative Images and Gaming Content</h2>
+
+                <p>
+                    Certain images, banners, graphics and gaming
+                    concepts displayed on this website may be
+                    digitally created, AI-generated or used for
+                    illustrative purposes.
+                </p>
+
+                <p>
+                    Such materials do not necessarily represent
+                    actual gameplay, official game releases,
+                    verified products or real user experiences.
+                </p>
+
+                <p>
+                    Game concepts, ratings and review counts must
+                    not be interpreted as verified information
+                    unless supported by authentic sources.
+                </p>
+
+
+                <h2>4. Third-Party Websites and External Links</h2>
+
+                <p>
+                    This website may contain links or references
+                    to external websites and independently operated
+                    digital services.
+                </p>
+
+                <p>
+                    External platforms operate under their own
+                    Terms and Conditions, Privacy Policies,
+                    eligibility requirements and legal obligations.
+                </p>
+
+                <p>
+                    Users should independently review and verify
+                    the nature, authenticity and legal status of
+                    any external service before accessing it or
+                    providing personal information.
+                </p>
+
+                <p>
+                    External links must accurately identify their
+                    destinations and must not facilitate activities
+                    prohibited by applicable law.
+                </p>
+
+
+                <h2>5. Commercial and Affiliate Disclosures</h2>
+
+                <p>
+                    Where commercial partnerships, sponsorships,
+                    paid promotions or affiliate relationships
+                    exist, they must be clearly disclosed alongside
+                    the relevant content or link.
+                </p>
+
+                <p>
+                    A reference to an external platform does not,
+                    by itself, establish that the platform is
+                    licensed, authorized, secure or legally
+                    available in every jurisdiction.
+                </p>
+
+
+                <h2>6. Intellectual Property and Trademarks</h2>
+
+                <p>
+                    All third-party game titles, trademarks, logos,
+                    characters and other identifiable brand assets
+                    remain the property of their respective owners.
+                </p>
+
+                <p>
+                    References to gaming brands and game publishers
+                    do not imply official affiliation, sponsorship
+                    or endorsement unless expressly authorized.
+                </p>
+
+                <p>
+                    Third-party intellectual property must be used
+                    in accordance with applicable laws and
+                    permissions.
+                </p>
+
+                <p>
+                    Rights holders may contact us regarding any
+                    intellectual property concerns.
+                </p>
+
+
+                <h2>7. No Guarantee of Outcomes</h2>
+
+                <p>
+                    We do not guarantee any particular gaming
+                    experience, performance improvement, reward,
+                    result or outcome arising from the use of this
+                    website or information published on it.
+                </p>
+
+                <p>
+                    Gaming experiences may vary depending on
+                    individual preferences, technical requirements,
+                    platform availability and other circumstances.
+                </p>
+
+
+                <h2>8. Responsible Gaming</h2>
+
+                <p>
+                    Digital gaming should be approached as a
+                    balanced recreational activity.
+                </p>
+
+                <p>
+                    We encourage users to maintain healthy gaming
+                    habits, take regular breaks, respect applicable
+                    age restrictions and prioritize personal
+                    wellbeing.
+                </p>
+
+                <p>
+                    For additional information, please visit our
+                    <a href="responsible-gaming.html">
+                        Responsible Gaming and Legal Disclosures
+                    </a>
+                    page.
+                </p>
+
+
+                <h2>9. Legal and Geographical Restrictions</h2>
+
+                <p>
+                    Users must comply with all applicable laws
+                    and regulations in their country, state or
+                    geographical region.
+                </p>
+
+                <p>
+                    Services that are prohibited in a user's
+                    jurisdiction must not be accessed, advertised,
+                    promoted or facilitated.
+                </p>
+
+                <p>
+                    Information on this website does not override
+                    applicable statutory restrictions, licensing
+                    requirements or regulatory obligations.
+                </p>
+
+
+                <div class="policy-notice">
+
+                    <p>
+                        <strong>Important Notice:</strong>
+                        The availability of this website does not
+                        establish that any linked service is legal
+                        or authorized in your location. Always
+                        comply with applicable laws and eligibility
+                        requirements.
+                    </p>
+
+                </div>
+
+
+                <h2>10. Advertising and Platform Disclosures</h2>
+
+                <p>
+                    References to Facebook, Instagram, Meta or
+                    other digital advertising platforms do not
+                    imply that this website is officially
+                    approved, certified or endorsed by them.
+                </p>
+
+                <p>
+                    Advertising activities must comply with
+                    applicable laws and the policies of the
+                    relevant advertising platforms.
+                </p>
+
+
+                <h2>11. Limitation of Liability</h2>
+
+                <p>
+                    To the extent permitted by applicable law,
+                    the website operator shall not be responsible
+                    for losses arising from unauthorized website
+                    use, independent third-party services or
+                    technical interruptions beyond its reasonable
+                    control.
+                </p>
+
+                <p>
+                    Nothing in this Disclaimer excludes any
+                    liability, statutory right or legal protection
+                    that cannot lawfully be excluded.
+                </p>
+
+
+                <h2>12. Changes to This Disclaimer</h2>
+
+                <p>
+                    This Disclaimer may be updated periodically
+                    to reflect changes in website functionality,
+                    content, business practices or applicable
+                    legal requirements.
+                </p>
+
+                <p>
+                    The latest version will be available on this
+                    page with its corresponding revision date.
+                </p>
+
+
+                <!-- CONTACT INFORMATION -->
+
+                <div class="policy-contact">
+
+                    <h2>13. Contact Information</h2>
+
+                    
+                    <p>
+                        <a href="contact.html">
+                            Visit Contact Page →
+                        </a>
+                    </p>
+
+                </div>
+
+
+                <!-- BACK TO HOME -->
+
+                <div class="policy-back">
+
+                    <a href="index.html">
+                        ← Back to Homepage
+                    </a>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer" id="contact">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+
+                    <a href="index.html"
+                       class="logo"
+                       aria-label="Homepage">
+
+                        <img src="images/logo.png"
+                             alt="Gaming controller logo">
+
+                    </a>
+
+                    <p>
+                        Explore gaming information, digital
+                        entertainment and responsible
+                        participation.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>Quick Links</h4>
+
+                    <a href="privacy-policy.html">
+                        Privacy Policy
+                    </a>
+
+                    <a href="terms-and-conditions.html">
+                        Terms and Conditions
+                    </a>
+
+                    <a href="disclaimers.html"
+                       aria-current="page">
+
+                        Disclaimers
+
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>Information</h4>
+
+                    <a href="contact.html">
+                        Contact Information
+                    </a>
+
+                    <a href="about.html">
+                        About Us
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>Responsible Gaming</h4>
+
+                    <a href="responsible-gaming.html">
+                        Responsible Gaming and Legal Disclosures
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; <span id="year"></span>.
+                    All rights reserved.
+                </p>
+
+                <a href="index.html">
+                    Back to Homepage ↑
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

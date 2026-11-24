@@ -1,0 +1,1105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | Gaming Discovery</title>
+
+    <meta name="description"
+          content="Learn about our website, gaming content, vision, mission and commitment to responsible digital entertainment.">
+
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        /* ABOUT BANNER */
+
+        .policy-banner {
+            position: relative;
+            padding: 85px 20px;
+            text-align: center;
+            overflow: hidden;
+
+            background:
+                radial-gradient(
+                    ellipse at top left,
+                    rgba(120,40,245,0.25),
+                    transparent 55%
+                ),
+                radial-gradient(
+                    ellipse at bottom right,
+                    rgba(236,50,213,0.15),
+                    transparent 50%
+                ),
+                #141827;
+
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .policy-banner h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(32px, 5vw, 58px);
+            font-weight: 700;
+
+            background: linear-gradient(
+                90deg,
+                #26E4DC,
+                #A9A0FF,
+                #F05BD8
+            );
+
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 14px;
+        }
+
+        .policy-banner p {
+            font-size: 14px;
+            color: #B5B9CB;
+        }
+
+
+        /* BREADCRUMB */
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 12px;
+            margin-bottom: 20px;
+            color: #B5B9CB;
+        }
+
+        .breadcrumb a {
+            color: #26E4DC;
+            text-decoration: none;
+        }
+
+
+        /* MAIN CONTENT */
+
+        .policy-section {
+            padding: 45px 20px 70px;
+            background: #141827;
+        }
+
+        .policy-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px;
+            background: #1C2134;
+            border: 1px solid rgba(255,255,255,0.10);
+            border-radius: 18px;
+        }
+
+        .policy-container h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 27px;
+            font-weight: 600;
+            color: #26E4DC;
+            margin-bottom: 14px;
+        }
+
+        .policy-container p {
+            font-size: 14px;
+            line-height: 1.9;
+            color: #C4C8DA;
+            margin-bottom: 15px;
+        }
+
+        .policy-container strong {
+            color: #FFFFFF;
+            font-weight: 600;
+        }
+
+        .policy-container a {
+            color: #26E4DC;
+            overflow-wrap: anywhere;
+        }
+
+
+        /* ABOUT INTRODUCTION */
+
+        .about-intro {
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            align-items: center;
+            gap: 35px;
+        }
+
+        .about-eyebrow {
+            display: inline-block;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: #C9A7FF;
+            background: rgba(120,40,245,0.12);
+            border: 1px solid rgba(120,40,245,0.25);
+            padding: 7px 15px;
+            border-radius: 30px;
+            margin-bottom: 18px;
+        }
+
+        .about-intro h2 {
+            font-size: clamp(28px, 3vw, 38px);
+            line-height: 1.2;
+            color: #FFFFFF;
+        }
+
+        .gradient-text {
+            background: linear-gradient(
+                90deg,
+                #26E4DC,
+                #A9A0FF,
+                #F05BD8
+            );
+
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .about-image {
+            position: relative;
+            overflow: hidden;
+            border-radius: 14px;
+            border: 1px solid rgba(168,85,247,0.25);
+            aspect-ratio: 4 / 3;
+            background: #252A40;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .about-image::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+
+            background: linear-gradient(
+                to top,
+                rgba(20,24,39,0.65),
+                transparent 55%
+            );
+        }
+
+
+        /* DIVIDER */
+
+        .policy-divider {
+            height: 1px;
+            border: none;
+            background: rgba(255,255,255,0.08);
+            margin: 38px 0;
+        }
+
+
+        /* VISION AND MISSION */
+
+        .mission-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .mission-card {
+            padding: 28px;
+            border-radius: 14px;
+            background: #252A40;
+            border: 1px solid rgba(168,85,247,0.20);
+            transition: 0.3s ease;
+        }
+
+        .mission-card:hover {
+            transform: translateY(-4px);
+            border-color: #A855F7;
+        }
+
+        .about-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            margin-bottom: 18px;
+
+            background: linear-gradient(
+                135deg,
+                rgba(236,50,213,0.20),
+                rgba(120,40,245,0.25)
+            );
+
+            color: #C9A7FF;
+        }
+
+        .about-icon svg {
+            width: 26px;
+            height: 26px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 1.7;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .mission-card h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 23px;
+            color: #FFFFFF;
+            margin-bottom: 12px;
+        }
+
+        .mission-card p {
+            margin-bottom: 0;
+        }
+
+
+        /* OUR FOCUS */
+
+        .focus-section {
+            margin-top: 40px;
+        }
+
+        .focus-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 15px;
+            margin-top: 22px;
+        }
+
+        .focus-card {
+            padding: 22px;
+            background: #252A40;
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+        }
+
+        .focus-card h3 {
+            font-family: 'Outfit', sans-serif;
+            color: #FFFFFF;
+            font-size: 19px;
+            margin-bottom: 10px;
+        }
+
+        .focus-card p {
+            font-size: 12px;
+            line-height: 1.8;
+            margin-bottom: 0;
+        }
+
+        .focus-number {
+            font-family: 'Outfit', sans-serif;
+            font-size: 12px;
+            color: #C9A7FF;
+            font-weight: 600;
+            margin-bottom: 14px;
+        }
+
+
+        /* RESPONSIBLE GAMING */
+
+        .commitment-section {
+            margin-top: 40px;
+            padding: 30px;
+            border-radius: 14px;
+
+            background: linear-gradient(
+                120deg,
+                rgba(120,40,245,0.12),
+                rgba(236,50,213,0.06)
+            );
+
+            border: 1px solid rgba(168,85,247,0.25);
+        }
+
+        .commitment-section h2 {
+            color: #FFFFFF;
+        }
+
+        .commitment-section p:last-child {
+            margin-bottom: 0;
+        }
+
+
+        /* TRANSPARENCY */
+
+        .transparency-section {
+            margin-top: 35px;
+        }
+
+        .transparency-section ul {
+            padding-left: 22px;
+            margin: 15px 0 20px;
+        }
+
+        .transparency-section li {
+            color: #C4C8DA;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+        }
+
+        .transparency-section li::marker {
+            color: #A855F7;
+        }
+
+
+        /* BACK TO HOME */
+
+        .policy-back {
+            margin-top: 35px;
+            text-align: center;
+        }
+
+        .policy-back a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 28px;
+            border-radius: 9px;
+            color: #FFFFFF;
+
+            background: linear-gradient(
+                110deg,
+                #EC32D5,
+                #7828F5
+            );
+
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .policy-back a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(120,40,245,0.3);
+        }
+
+
+        /* TABLET */
+
+        @media (max-width: 1024px) {
+
+            .about-intro {
+                gap: 22px;
+            }
+
+            .focus-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+        }
+
+
+        /* MOBILE RESPONSIVE */
+
+        @media (max-width: 767px) {
+
+            .policy-banner {
+                padding: 45px 18px;
+            }
+
+            .policy-banner h1 {
+                font-size: 36px;
+            }
+
+            .policy-banner p {
+                font-size: 12px;
+            }
+
+            .policy-section {
+                padding: 25px 14px 40px;
+            }
+
+            .policy-container {
+                padding: 22px 18px;
+                border-radius: 12px;
+            }
+
+            .policy-container h2 {
+                font-size: 24px;
+            }
+
+            .policy-container p,
+            .transparency-section li {
+                font-size: 13px;
+                line-height: 1.8;
+            }
+
+            .about-intro {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .about-intro h2 {
+                font-size: 30px;
+            }
+
+            .about-image {
+                aspect-ratio: 16 / 10;
+            }
+
+            .mission-grid {
+                grid-template-columns: 1fr;
+                gap: 14px;
+            }
+
+            .mission-card {
+                padding: 22px;
+            }
+
+            .focus-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 10px;
+            }
+
+            .focus-card {
+                padding: 15px;
+            }
+
+            .focus-card h3 {
+                font-size: 16px;
+            }
+
+            .focus-card p {
+                font-size: 11px;
+            }
+
+            .commitment-section {
+                padding: 20px;
+                margin-top: 28px;
+            }
+
+            .focus-section {
+                margin-top: 28px;
+            }
+
+            .policy-divider {
+                margin: 25px 0;
+            }
+
+            .policy-back a {
+                width: 100%;
+            }
+
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            .mission-card,
+            .policy-back a {
+                transition: none;
+            }
+
+            .mission-card:hover,
+            .policy-back a:hover {
+                transform: none;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html"
+               class="logo"
+               aria-label="Homepage">
+
+                <img src="images/logo.png"
+                     alt="Gaming controller logo">
+
+            </a>
+
+            <nav class="navigation" id="navigation">
+
+                <a href="index.html#home" class="nav-link">
+                    Home
+                </a>
+
+                <a href="index.html#discover" class="nav-link">
+                    Discover
+                </a>
+
+                <a href="index.html#trending" class="nav-link">
+                    Games
+                </a>
+
+                <a href="index.html#community" class="nav-link">
+                    Community
+                </a>
+
+                <a href="index.html#blogs" class="nav-link">
+                    Blog
+                </a>
+
+                <a href="contact.html" class="nav-link">
+                    Contact
+                </a>
+
+            </nav>
+
+            <a href="index.html"
+               class="btn primary-btn header-cta">
+
+                Back to Home
+
+            </a>
+
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="navigation">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- PAGE BANNER -->
+
+        <section class="policy-banner">
+
+            <div class="breadcrumb">
+
+                <a href="index.html">Home</a>
+
+                <span>›</span>
+
+                <span>About Us</span>
+
+            </div>
+
+            <h1>About Us</h1>
+
+            <p>
+                Discover our purpose, vision and approach
+                to digital entertainment.
+            </p>
+
+        </section>
+
+
+        <!-- ABOUT CONTENT -->
+
+        <section class="policy-section">
+
+            <article class="policy-container">
+
+
+                <!-- INTRODUCTION -->
+
+                <div class="about-intro">
+
+                    <div class="about-text">
+
+                        <span class="about-eyebrow">
+                            WHO WE ARE
+                        </span>
+
+                        <h2>
+                            Explore the World of
+                            <span class="gradient-text">
+                                Gaming
+                            </span>
+                        </h2>
+
+                        <p>
+                            Gaming brings together creativity,
+                            technology, storytelling and interactive
+                            experiences from around the world.
+                        </p>
+
+                        <p>
+                            Through our website, visitors can explore
+                            gaming genres, read gaming-related content
+                            and learn about different forms of
+                            digital entertainment.
+                        </p>
+
+                        <p>
+                            Our aim is to provide an accessible
+                            browsing experience while encouraging
+                            informed and responsible participation
+                            in digital activities.
+                        </p>
+
+                    </div>
+
+                    <div class="about-image">
+
+                        <img src="images/about-us-img.webp"
+                             alt="Gaming controller and neon illuminated gaming setup"
+                             loading="lazy">
+
+                    </div>
+
+                </div>
+
+
+                <hr class="policy-divider">
+
+
+                <!-- VISION AND MISSION -->
+
+                <div class="mission-grid">
+
+                    <div class="mission-card">
+
+                        <div class="about-icon">
+
+                            <svg viewBox="0 0 24 24">
+
+                                <path d="M2 12s3.6-7 10-7
+                                         10 7 10 7
+                                         -3.6 7-10 7
+                                         -10-7-10-7z"/>
+
+                                <circle cx="12"
+                                        cy="12"
+                                        r="3"/>
+
+                            </svg>
+
+                        </div>
+
+                        <h3>Our Vision</h3>
+
+                        <p>
+                            To create an accessible and informative
+                            digital environment where visitors can
+                            explore gaming-related content, understand
+                            different entertainment experiences and
+                            make informed decisions.
+                        </p>
+
+                    </div>
+
+
+                    <div class="mission-card">
+
+                        <div class="about-icon">
+
+                            <svg viewBox="0 0 24 24">
+
+                                <circle cx="12" cy="12" r="9"/>
+
+                                <circle cx="12" cy="12" r="5"/>
+
+                                <circle cx="12" cy="12" r="1"/>
+
+                            </svg>
+
+                        </div>
+
+                        <h3>Our Mission</h3>
+
+                        <p>
+                            To present gaming information through
+                            an intuitive, mobile-friendly website,
+                            with an emphasis on accessible content,
+                            transparency and responsible digital
+                            participation.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- OUR FOCUS -->
+
+                <div class="focus-section">
+
+                    <h2>
+                        What We <span class="gradient-text">Focus On</span>
+                    </h2>
+
+                    <p>
+                        Explore different areas of gaming culture
+                        and interactive entertainment.
+                    </p>
+
+                    <div class="focus-grid">
+
+                        <div class="focus-card">
+
+                            <div class="focus-number">01</div>
+
+                            <h3>Action Games</h3>
+
+                            <p>
+                                Explore fast-paced gameplay styles,
+                                interactive challenges and gaming
+                                mechanics.
+                            </p>
+
+                        </div>
+
+
+                        <div class="focus-card">
+
+                            <div class="focus-number">02</div>
+
+                            <h3>Esports</h3>
+
+                            <p>
+                                Learn about competitive video gaming,
+                                teamwork and esports culture.
+                            </p>
+
+                        </div>
+
+
+                        <div class="focus-card">
+
+                            <div class="focus-number">03</div>
+
+                            <h3>Racing Games</h3>
+
+                            <p>
+                                Discover virtual racing experiences,
+                                driving simulations and racing genres.
+                            </p>
+
+                        </div>
+
+
+                        <div class="focus-card">
+
+                            <div class="focus-number">04</div>
+
+                            <h3>Adventure Games</h3>
+
+                            <p>
+                                Explore imaginative worlds,
+                                storytelling and interactive
+                                adventures.
+                            </p>
+
+                        </div>
+
+
+                        <div class="focus-card">
+
+                            <div class="focus-number">05</div>
+
+                            <h3>Mobile Gaming</h3>
+
+                            <p>
+                                Learn about mobile gaming genres
+                                and entertainment experiences
+                                across portable devices.
+                            </p>
+
+                        </div>
+
+
+                        <div class="focus-card">
+
+                            <div class="focus-number">06</div>
+
+                            <h3>Gaming Insights</h3>
+
+                            <p>
+                                Read informational content about
+                                gaming culture, technology and
+                                responsible participation.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- OUR COMMITMENT -->
+
+                <div class="commitment-section">
+
+                    <h2>
+                        Our Commitment to
+                        <span class="gradient-text">
+                            Responsible Gaming
+                        </span>
+                    </h2>
+
+                    <p>
+                        We believe personal wellbeing, privacy
+                        and legal compliance are important
+                        considerations when engaging with
+                        digital entertainment.
+                    </p>
+
+                    <p>
+                        We encourage visitors to maintain healthy
+                        gaming habits, respect applicable age
+                        restrictions, take regular breaks and
+                        prioritize their everyday responsibilities.
+                    </p>
+
+                    <p>
+                        Learn more on our
+                        <a href="responsible-gaming.html">
+                            Responsible Gaming and Legal Disclosures
+                        </a>
+                        page.
+                    </p>
+
+                </div>
+
+
+                <!-- TRANSPARENCY 
+
+                <div class="transparency-section">
+
+                    <h2>Transparency and External Relationships</h2>
+
+                    <p>
+                        Visitors should be able to understand
+                        who operates this website and the nature
+                        of any external services referenced
+                        within its content.
+                    </p>
+
+                    <p>
+                        The website's actual commercial purpose
+                        and external relationships are disclosed
+                        below.
+                    </p>
+
+                    
+
+                    <ul>
+
+                        <li>
+                            <strong>Website Operator:</strong>
+                            [Registered Business Name]
+                        </li>
+
+                        <li>
+                            <strong>Website Purpose:</strong>
+                            [Accurately describe the website's actual
+                            informational and commercial activities]
+                        </li>
+
+                        <li>
+                            <strong>External Platform Relationship:</strong>
+                            [Disclose any referral, affiliate or
+                            commercial relationship, including
+                            the nature of the external service]
+                        </li>
+
+                    </ul>
+
+                    <p>
+                        External platforms are subject to their
+                        respective terms, privacy policies and
+                        applicable legal requirements.
+                        References to an external service do not
+                        establish that it is licensed, authorized
+                        or legally available in every jurisdiction.
+                    </p>
+
+                    <p>
+                        Third-party game names, trademarks and
+                        illustrative artwork do not imply official
+                        affiliation with or endorsement by any
+                        game publisher.
+                    </p>
+
+                </div>
+
+
+                <hr class="policy-divider">
+
+            -->
+                <!-- CONTACT INFORMATION -->
+
+                <div class="transparency-section">
+
+                    <h2>Connect With Us</h2>
+
+                    <p>
+                        For website-related questions, feedback,
+                        content corrections or general enquiries,
+                        please visit our contact information page.
+                    </p>
+
+                    <p>
+                        <a href="contact.html">
+                            Contact Information →
+                        </a>
+                    </p>
+
+                    <p>
+                        You can also review our
+                        <a href="privacy-policy.html">
+                            Privacy Policy
+                        </a>,
+                        <a href="terms-and-conditions.html">
+                            Terms and Conditions
+                        </a>
+                        and
+                        <a href="disclaimers.html">
+                            Disclaimer
+                        </a>
+                        for further information.
+                    </p>
+
+                </div>
+
+
+                <!-- BACK TO HOME -->
+
+                <div class="policy-back">
+
+                    <a href="index.html">
+                        ← Back to Homepage
+                    </a>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer" id="contact">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+
+                    <a href="index.html"
+                       class="logo"
+                       aria-label="Homepage">
+
+                        <img src="images/logo.png"
+                             alt="Gaming controller logo">
+
+                    </a>
+
+                    <p>
+                        Explore gaming information, digital
+                        entertainment and responsible
+                        participation.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>Quick Links</h4>
+
+                    <a href="privacy-policy.html">
+                        Privacy Policy
+                    </a>
+
+                    <a href="terms-and-conditions.html">
+                        Terms and Conditions
+                    </a>
+
+                    <a href="disclaimers.html">
+                        Disclaimers
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>Information</h4>
+
+                    <a href="contact.html">
+                        Contact Information
+                    </a>
+
+                    <a href="about.html"
+                       aria-current="page">
+
+                        About Us
+
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>Responsible Gaming</h4>
+
+                    <a href="responsible-gaming.html">
+                        Responsible Gaming and Legal Disclosures
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; <span id="year"></span>.
+                    All rights reserved.
+                </p>
+
+                <a href="index.html">
+                    Back to Homepage ↑
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

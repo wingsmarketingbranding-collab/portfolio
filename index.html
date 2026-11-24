@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gaming Discovery | Explore Your Next Adventure</title>
+    <meta name="description" content="Discover gaming genres, explore video games and read the latest gaming stories.">
+
+    <link rel="icon" href="images/logo.webp" type="image/webp">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+        <div class="container nav-container">
+
+            <a href="#home" class="logo" aria-label="Homepage">
+                <img src="images/logo.webp" alt="Gaming controller logo">
+            </a>
+
+            <nav class="navigation" id="navigation">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#discover" class="nav-link">Discover</a>
+                <a href="#trending" class="nav-link">Games</a>
+                <a href="#community" class="nav-link">Community</a>
+                <a href="#blogs" class="nav-link">Blog</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <a href="https://exchlotus.com/" class="btn primary-btn header-cta">
+                Join Community
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false"
+                aria-controls="navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO BANNER -->
+
+        <section class="hero" id="home">
+
+            <!-- <picture class="hero-picture">
+                <source media="(max-width: 767px)" srcset="images/hero-bg.png">
+
+                <img src="images/hero-bg.png" alt="Gaming controller, headset and gaming monitor">
+            </picture> -->
+
+            <picture class="hero-picture">
+
+                <!-- Mobile Banner -->
+                <source media="(max-width: 767px)" srcset="images/hero-mob-bg.webp">
+
+                <!-- Desktop Banner -->
+                <img src="images/hero-bg2.webp" alt="Gaming adventure banner">
+
+            </picture>
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-inner">
+                <div class="hero-content">
+
+                    <div class="eyebrow">YOUR WORLD OF GAMING</div>
+
+                    <h1>
+                        Discover Your Next
+                        <span>Gaming Adventure</span>
+                    </h1>
+
+                    <p>
+                        Explore exciting games, discover new genres,
+                        and experience the vibrant world of gaming.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="https://exchlotus.com/" class="btn primary-btn">
+                            Join Community
+                        </a>
+
+                        <a href="https://exchlotus.com/" class="btn outline-btn">
+                            Explore Games
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- GAME CATEGORIES -->
+
+        <section class="section" id="discover">
+            <div class="container">
+
+                <div class="section-heading">
+                    <h2>Explore Game <span>Categories</span></h2>
+                    <p>Find games you love by genre and play style.</p>
+                </div>
+
+                <div class="category-grid">
+
+
+                    <a href="https://exchlotus.com/" class="category-card">
+                        <img src="images/action.webp" alt="Action games" loading="lazy">
+                        <div class="category-label">Action</div>
+                    </a>
+
+
+                    <a href="https://exchlotus.com/" class="category-card">
+                        <img src="images/esport.webp" alt="Esports games" loading="lazy">
+                        <div class="category-label">Esports</div>
+                    </a>
+
+                    <a href="https://exchlotus.com/" class="category-card">
+                        <img src="images/racing.webp" alt="Racing games" loading="lazy">
+                        <div class="category-label">Racing</div>
+                    </a>
+
+                    <a href="https://exchlotus.com/" class="category-card">
+                        <img src="images/adventure.webp" alt="Adventure games" loading="lazy">
+                        <div class="category-label">Adventure</div>
+                    </a>
+
+                    <a href="https://exchlotus.com/" class="category-card">
+                        <img src="images/mobile-games.webp" alt="Mobile games" loading="lazy">
+                        <div class="category-label">Mobile Games</div>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- FEATURED GAMES -->
+
+        <section class="section" id="trending">
+            <div class="container">
+
+                <div class="section-heading">
+                    <h2>Discover Your <span>Play Style</span></h2>
+                    <p>Explore different ways to experience video games.</p>
+                </div>
+
+                <div class="games-grid">
+
+                    <a href="https://exchlotus.com/" class="game-card">
+                        <div class="game-image">
+                            <img src="images/shadow-realms.webp" alt="Fantasy adventure gaming" loading="lazy">
+                        </div>
+
+                        <div class="game-content">
+                            <h3>Fantasy Adventures</h3>
+                            <p>Discover imaginative worlds and epic stories.</p>
+
+                            <div class="tags">
+                                <span>Adventure</span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://exchlotus.com/" class="game-card">
+                        <div class="game-image">
+                            <img src="images/cyber-strike.webp" alt="Futuristic multiplayer gaming" loading="lazy">
+                        </div>
+
+                        <div class="game-content">
+                            <h3>Multiplayer Action</h3>
+                            <p>Explore teamwork and fast-paced challenges.</p>
+
+                            <div class="tags">
+                                <span>Action</span>
+                                <span>Multiplayer</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://exchlotus.com/" class="game-card">
+                        <div class="game-image">
+                            <img src="images/velocity-racing.webp" alt="Sports car racing game" loading="lazy">
+                        </div>
+
+                        <div class="game-content">
+                            <h3>Velocity Racing</h3>
+                            <p>Experience the excitement of virtual racing.</p>
+
+                            <div class="tags">
+                                <span>Racing</span>
+                                <span>Sports</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://exchlotus.com/" class="game-card">
+                        <div class="game-image">
+                            <img src="images/echoes-of-aria.webp" alt="Open world exploration" loading="lazy">
+                        </div>
+
+                        <div class="game-content">
+                            <h3>Open World</h3>
+                            <p>Discover landscapes and explore at your pace.</p>
+
+                            <div class="tags">
+                                <span>Adventure</span>
+                                <span>Exploration</span>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- LATEST BLOGS -->
+
+        <section class="section" id="blogs">
+            <div class="container">
+
+                <div class="section-heading">
+                    <h2>Latest <span>Blogs</span></h2>
+                    <p>Gaming insights, guides and stories from the gaming world.</p>
+                </div>
+
+                <div class="blog-grid">
+
+                    <a href="https://exchlotus.com/" class="blog-card">
+
+                        <img src="images/blog1.webp" alt="Gaming controller" loading="lazy">
+
+                        <div class="blog-content">
+                            <span class="blog-category">GAMING GUIDES</span>
+
+                            <h3>How to Find Your Next Favourite Game</h3>
+
+                            <p>
+                                Discover how different genres, gameplay styles
+                                and stories can shape your gaming experience.
+                            </p>
+
+                            <details class="blog-details">
+                                <summary>Read More</summary>
+                                <p>
+                                    Start by exploring genres you enjoy.
+                                    Check gameplay demonstrations, accessibility
+                                    options and official game information before
+                                    choosing a new title.
+                                </p>
+                            </details>
+
+                        </div>
+                    </a>
+
+                    <a href="https://exchlotus.com/" class="blog-card">
+
+                        <img src="images/blog2.webp" alt="Esports gaming event" loading="lazy">
+
+                        <div class="blog-content">
+                            <span class="blog-category">ESPORTS</span>
+
+                            <h3>The Rise of Esports and Competitive Gaming</h3>
+
+                            <p>
+                                Explore how teamwork, skill and competition
+                                bring gaming communities together.
+                            </p>
+
+                            <details class="blog-details">
+                                <summary>Read More</summary>
+                                <p>
+                                    Competitive video gaming brings players
+                                    together through organised tournaments.
+                                    Practice, communication and healthy gaming
+                                    habits are important parts of participation.
+                                </p>
+                            </details>
+
+                        </div>
+                    </a>
+
+                    <a href="https://exchlotus.com/" class="blog-card">
+
+                        <img src="images/echoes-of-aria.webp" alt="Open world gaming landscape" loading="lazy">
+
+                        <div class="blog-content">
+                            <span class="blog-category">GAME DISCOVERY</span>
+
+                            <h3>What Makes Open-World Games So Engaging?</h3>
+
+                            <p>
+                                From immersive landscapes to creative freedom,
+                                discover the appeal of open-world gaming.
+                            </p>
+
+                            <details class="blog-details">
+                                <summary>Read More</summary>
+                                <p>
+                                    Open-world games allow players to explore
+                                    environments, discover stories and choose
+                                    their own paths through a virtual world.
+                                </p>
+                            </details>
+
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- COMMUNITY BANNER -->
+
+        <section class="section" id="community">
+            <div class="container">
+
+                <div class="community-banner">
+
+                    <div class="community-icon">
+                        <img src="images/logo.webp" alt="">
+                    </div>
+
+                    <div class="community-content">
+                        <h2>Be Part of the <span>Gaming Community</span></h2>
+
+                        <p>
+                            Discover new games, explore gaming culture
+                            and connect through shared interests.
+                        </p>
+                    </div>
+
+                    <a href="https://exchlotus.com/" class="btn primary-btn">
+                        Contact Us
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer" id="contact">
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+
+                    <a href="#home" class="logo" aria-label="Homepage">
+                        <img src="images/logo.webp" alt="Gaming controller logo">
+                    </a>
+
+                    <p>
+                        Your destination for gaming discovery,
+                        gaming stories and responsible digital entertainment.
+                    </p>
+
+                </div>
+
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-and-conditions.html">Terms and Conditions</a>
+                    <a href="disclaimers.html">Disclaimers</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Information</h4>
+
+                    <a href="contact.html">Contact Information</a>
+                    <a href="about.html">About Us</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Responsible Gaming</h4>
+
+                    <a href="responsible-gaming.html">
+                        Responsible Gaming and Legal Disclosures
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    &copy; <span id="year"></span>.
+                    All rights reserved.
+                </p>
+
+                <a href="#home" class="back-to-top">
+                    Back to top ↑
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

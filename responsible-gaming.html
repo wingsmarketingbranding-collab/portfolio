@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsible Gaming and Legal Disclosures</title>
+
+    <meta name="description"
+        content="Learn about responsible gaming practices, healthy gaming habits, legal restrictions and third-party platform disclosures.">
+
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* PAGE BANNER */
+
+        .policy-banner {
+            position: relative;
+            padding: 85px 20px;
+            text-align: center;
+            overflow: hidden;
+
+            background:
+                radial-gradient(ellipse at top left,
+                    rgba(120, 40, 245, 0.25),
+                    transparent 55%),
+                radial-gradient(ellipse at bottom right,
+                    rgba(236, 50, 213, 0.15),
+                    transparent 50%),
+                #141827;
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .policy-banner h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(30px, 5vw, 54px);
+            font-weight: 700;
+
+            background: linear-gradient(90deg,
+                    #26E4DC,
+                    #A9A0FF,
+                    #F05BD8);
+
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            max-width: 900px;
+            margin: 0 auto 14px;
+        }
+
+        .policy-banner p {
+            font-size: 14px;
+            color: #B5B9CB;
+        }
+
+
+        /* BREADCRUMB */
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 12px;
+            margin-bottom: 20px;
+            color: #B5B9CB;
+        }
+
+        .breadcrumb a {
+            color: #26E4DC;
+            text-decoration: none;
+        }
+
+
+        /* MAIN CONTENT */
+
+        .policy-section {
+            padding: 45px 20px 70px;
+            background: #141827;
+        }
+
+        .policy-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 45px;
+            background: #1C2134;
+            border: 1px solid rgba(255, 255, 255, 0.10);
+            border-radius: 18px;
+        }
+
+        .policy-date {
+            display: inline-block;
+            background: rgba(120, 40, 245, 0.12);
+            border: 1px solid rgba(120, 40, 245, 0.25);
+            color: #C9A7FF;
+            padding: 7px 15px;
+            border-radius: 30px;
+            font-size: 11px;
+            margin-bottom: 25px;
+        }
+
+        .policy-container h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: #26E4DC;
+            margin-top: 30px;
+            margin-bottom: 12px;
+        }
+
+        .policy-container p {
+            font-size: 14px;
+            line-height: 1.9;
+            color: #C4C8DA;
+            margin-bottom: 15px;
+        }
+
+        .policy-container ul {
+            padding-left: 22px;
+            margin: 12px 0 20px;
+        }
+
+        .policy-container li {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #C4C8DA;
+            margin-bottom: 8px;
+        }
+
+        .policy-container li::marker {
+            color: #A855F7;
+        }
+
+        .policy-container strong {
+            color: #FFFFFF;
+            font-weight: 600;
+        }
+
+        .policy-container a {
+            color: #26E4DC;
+            overflow-wrap: anywhere;
+        }
+
+        .policy-divider {
+            height: 1px;
+            border: none;
+            background: rgba(255, 255, 255, 0.08);
+            margin: 28px 0;
+        }
+
+
+        /* RESPONSIBLE GAMING CARDS */
+
+        .responsible-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 16px;
+            margin: 30px 0;
+        }
+
+        .responsible-card {
+            padding: 24px;
+            background: #252A40;
+            border: 1px solid rgba(168, 85, 247, 0.20);
+            border-radius: 14px;
+            transition: 0.3s ease;
+        }
+
+        .responsible-card:hover {
+            transform: translateY(-4px);
+            border-color: #A855F7;
+        }
+
+        .responsible-icon {
+            width: 48px;
+            height: 48px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 12px;
+            margin-bottom: 16px;
+
+            background: linear-gradient(135deg,
+                    rgba(236, 50, 213, 0.20),
+                    rgba(120, 40, 245, 0.25));
+
+            color: #C9A7FF;
+        }
+
+        .responsible-icon svg {
+            width: 25px;
+            height: 25px;
+            stroke: currentColor;
+            stroke-width: 1.7;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .responsible-card h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+        }
+
+        .responsible-card p {
+            font-size: 12px;
+            line-height: 1.8;
+            margin-bottom: 0;
+        }
+
+
+        /* IMPORTANT LEGAL NOTICE */
+
+        .legal-notice {
+            margin: 28px 0;
+            padding: 25px;
+            border-radius: 12px;
+
+            background: linear-gradient(120deg,
+                    rgba(120, 40, 245, 0.14),
+                    rgba(236, 50, 213, 0.06));
+
+            border: 1px solid rgba(168, 85, 247, 0.30);
+            border-left: 4px solid #A855F7;
+        }
+
+        .legal-notice h3 {
+            font-family: 'Outfit', sans-serif;
+            color: #FFFFFF;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .legal-notice p {
+            color: #DDD3EF;
+            margin-bottom: 0;
+        }
+
+
+        /* SUPPORT BOX */
+
+        .support-box {
+            margin-top: 30px;
+            padding: 25px;
+            background: rgba(38, 228, 220, 0.05);
+            border: 1px solid rgba(38, 228, 220, 0.20);
+            border-radius: 12px;
+        }
+
+        .support-box h2 {
+            margin-top: 0;
+        }
+
+        .support-box p:last-child {
+            margin-bottom: 0;
+        }
+
+
+        /* BACK TO HOME BUTTON */
+
+        .policy-back {
+            margin-top: 35px;
+            text-align: center;
+        }
+
+        .policy-back a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 28px;
+            border-radius: 9px;
+            color: #FFFFFF;
+
+            background: linear-gradient(110deg,
+                    #EC32D5,
+                    #7828F5);
+
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .policy-back a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(120, 40, 245, 0.3);
+        }
+
+
+        /* TABLET RESPONSIVE */
+
+        @media (max-width: 1024px) {
+
+            .responsible-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+        }
+
+
+        /* MOBILE RESPONSIVE */
+
+        @media (max-width: 767px) {
+
+            .policy-banner {
+                padding: 45px 18px;
+            }
+
+            .policy-banner h1 {
+                font-size: 32px;
+                line-height: 1.2;
+            }
+
+            .policy-banner p {
+                font-size: 12px;
+            }
+
+            .policy-section {
+                padding: 25px 14px 40px;
+            }
+
+            .policy-container {
+                padding: 22px 18px;
+                border-radius: 12px;
+            }
+
+            .policy-container h2 {
+                font-size: 21px;
+                margin-top: 24px;
+            }
+
+            .policy-container p,
+            .policy-container li {
+                font-size: 13px;
+                line-height: 1.8;
+            }
+
+            .responsible-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+                margin: 22px 0;
+            }
+
+            .responsible-card {
+                padding: 20px;
+            }
+
+            .responsible-card h3 {
+                font-size: 18px;
+            }
+
+            .legal-notice,
+            .support-box {
+                padding: 18px;
+            }
+
+            .support-box h2 {
+                margin-top: 0;
+            }
+
+            .policy-back a {
+                width: 100%;
+            }
+
+        }
+
+
+        /* ACCESSIBILITY */
+
+        @media (prefers-reduced-motion: reduce) {
+
+            .responsible-card,
+            .policy-back a {
+                transition: none;
+            }
+
+            .responsible-card:hover,
+            .policy-back a:hover {
+                transform: none;
+            }
+
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo" aria-label="Homepage">
+
+                <img src="images/logo.png" alt="Gaming controller logo">
+
+            </a>
+
+            <nav class="navigation" id="navigation">
+
+                <a href="index.html#home" class="nav-link">
+                    Home
+                </a>
+
+                <a href="index.html#discover" class="nav-link">
+                    Discover
+                </a>
+
+                <a href="index.html#trending" class="nav-link">
+                    Games
+                </a>
+
+                <a href="index.html#community" class="nav-link">
+                    Community
+                </a>
+
+                <a href="index.html#blogs" class="nav-link">
+                    Blog
+                </a>
+
+                <a href="contact.html" class="nav-link">
+                    Contact
+                </a>
+
+            </nav>
+
+            <a href="index.html" class="btn primary-btn header-cta">
+
+                Back to Home
+
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false"
+                aria-controls="navigation">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- PAGE BANNER -->
+
+        <section class="policy-banner">
+
+            <div class="breadcrumb">
+
+                <a href="index.html">Home</a>
+
+                <span>›</span>
+
+                <span>Responsible Gaming</span>
+
+            </div>
+
+            <h1>Responsible Gaming and Legal Disclosures</h1>
+
+            <p>
+                Stay informed. Play responsibly.
+                Prioritize your wellbeing.
+            </p>
+
+        </section>
+
+
+        <!-- MAIN CONTENT -->
+
+        <section class="policy-section">
+
+            <article class="policy-container">
+
+                <div class="policy-date">
+                    Last Updated: 24-Nov-2026
+                </div>
+
+                <p>
+                    Gaming and digital entertainment should be
+                    approached responsibly, with consideration
+                    for personal wellbeing, privacy, financial
+                    safety and applicable legal requirements.
+                </p>
+
+                <p>
+                    This page provides important information
+                    about healthy gaming habits, eligibility
+                    requirements, external platforms and legal
+                    responsibilities.
+                </p>
+
+
+                <!-- RESPONSIBLE GAMING CARDS -->
+
+                <div class="responsible-grid">
+
+                    <!-- TIME MANAGEMENT -->
+
+                    <div class="responsible-card">
+
+                        <div class="responsible-icon">
+
+                            <svg viewBox="0 0 24 24">
+
+                                <circle cx="12" cy="12" r="9" />
+
+                                <path d="M12 7v5l3 2" />
+
+                            </svg>
+
+                        </div>
+
+                        <h3>Manage Your Time</h3>
+
+                        <p>
+                            Set reasonable gaming limits and
+                            maintain a healthy balance with
+                            your everyday responsibilities.
+                        </p>
+
+                    </div>
+
+
+                    <!-- PERSONAL WELLBEING -->
+
+                    <div class="responsible-card">
+
+                        <div class="responsible-icon">
+
+                            <svg viewBox="0 0 24 24">
+
+                                <path d="M20.8 8.6
+                                         c0 4.5-8.8 10-8.8 10
+                                         S3.2 13.1 3.2 8.6
+                                         a4.6 4.6 0 0 1 8.8-1
+                                         a4.6 4.6 0 0 1 8.8 1z" />
+
+                            </svg>
+
+                        </div>
+
+                        <h3>Prioritize Wellbeing</h3>
+
+                        <p>
+                            Take regular breaks and prioritize
+                            your physical health, mental
+                            wellbeing and relationships.
+                        </p>
+
+                    </div>
+
+
+                    <!-- SAFE PARTICIPATION -->
+
+                    <div class="responsible-card">
+
+                        <div class="responsible-icon">
+
+                            <svg viewBox="0 0 24 24">
+
+                                <path d="m12 3 8 3v6
+                                         c0 5-8 9-8 9
+                                         s-8-4-8-9V6z" />
+
+                                <path d="m9 12 2 2 4-4" />
+
+                            </svg>
+
+                        </div>
+
+                        <h3>Stay Informed</h3>
+
+                        <p>
+                            Understand applicable age limits,
+                            platform requirements and legal
+                            restrictions before participating.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <hr class="policy-divider">
+
+
+                <h2>1. Responsible Gaming Principles</h2>
+
+                <p>
+                    Digital entertainment should remain a
+                    recreational activity. It should not interfere
+                    with education, employment, personal health,
+                    relationships or everyday responsibilities.
+                </p>
+
+                <p>
+                    Users are encouraged to make informed decisions
+                    and maintain control over their participation
+                    in gaming-related activities.
+                </p>
+
+
+                <h2>2. Healthy Gaming Habits</h2>
+
+                <p>
+                    We encourage visitors to adopt the following
+                    responsible gaming practices:
+                </p>
+
+                <ul>
+
+                    <li>
+                        Set reasonable limits on gaming time.
+                    </li>
+
+                    <li>
+                        Take regular breaks during extended sessions.
+                    </li>
+
+                    <li>
+                        Maintain a healthy sleep schedule.
+                    </li>
+
+                    <li>
+                        Balance gaming with work, education,
+                        exercise and social activities.
+                    </li>
+
+                    <li>
+                        Avoid gaming when experiencing emotional
+                        distress or difficulty maintaining control.
+                    </li>
+
+                    <li>
+                        Seek appropriate support if gaming begins
+                        to negatively affect everyday life.
+                    </li>
+
+                </ul>
+
+
+                <h2>3. Age Restrictions and Eligibility</h2>
+
+                <p>
+                    Users must comply with the applicable minimum
+                    age requirements and eligibility conditions
+                    associated with any digital platform or
+                    service they access.
+                </p>
+
+                <p>
+                    Gambling and other age-restricted activities
+                    must not be accessed by minors or individuals
+                    who do not meet the applicable legal age
+                    requirements.
+                </p>
+
+                <p>
+                    Meeting an age requirement does not make an
+                    otherwise prohibited activity lawful.
+                </p>
+
+                <p>
+                    Parents and guardians are encouraged to
+                    monitor children's digital activities and
+                    use suitable parental control features.
+                </p>
+
+
+                <h2>4. Financial Awareness and Gambling Risks</h2>
+
+                <p>
+                    Gaming should not be treated as a source
+                    of income or a solution to financial
+                    difficulties.
+                </p>
+
+                <p>
+                    Gambling and activities involving financial
+                    stakes carry a risk of financial loss and
+                    may contribute to compulsive behavior,
+                    emotional distress and financial hardship.
+                </p>
+
+                <p>
+                    Users should never borrow money to gamble
+                    or attempt to recover losses through
+                    continued participation.
+                </p>
+
+                <p>
+                    Activities involving financial stakes may
+                    also be prohibited by applicable law.
+                </p>
+
+
+                <h2>5. Legal and Geographical Restrictions</h2>
+
+                <p>
+                    Access to digital services is subject to
+                    applicable laws, regulations and geographical
+                    restrictions.
+                </p>
+
+                <p>
+                    Activities prohibited in a user's country,
+                    state or jurisdiction must not be accessed,
+                    advertised, promoted or facilitated.
+                </p>
+
+                <p>
+                    In India, applicable restrictions on online
+                    money games, betting, gambling and related
+                    advertising must be observed. External
+                    registration links must not be used to
+                    facilitate prohibited activities.
+                </p>
+
+
+                <!-- LEGAL NOTICE -->
+
+                <div class="legal-notice">
+
+                    <h3>Important Legal Notice</h3>
+
+                    <p>
+                        The availability of a website or external
+                        platform does not establish its legality,
+                        licensing status or regulatory authorization.
+                        A disclaimer, age notice or intermediary
+                        website does not override applicable laws.
+                    </p>
+
+                </div>
+
+
+                <h2>6. Third-Party Platforms and External Services</h2>
+
+                <p>
+                    External platforms operate under their own
+                    terms, privacy policies, eligibility
+                    requirements and regulatory obligations.
+                </p>
+
+                <p>
+                    Where external platforms provide betting,
+                    gambling or other financially restricted
+                    services, the nature of those services must
+                    be clearly identified and must not be
+                    misrepresented as ordinary video gaming.
+                </p>
+
+                <p>
+                    References to external services do not
+                    constitute verification of their licensing,
+                    security, legality or regulatory authorization.
+                </p>
+
+
+                <h2>7. Transparency and Informed Participation</h2>
+
+                <p>
+                    Transparency and informed decision-making are important
+                    aspects of responsible digital participation. Visitors
+                    are encouraged to understand the nature, features,
+                    eligibility requirements and applicable terms of any
+                    external service before engaging with it.
+                </p>
+
+                <p>
+                    External platforms operate under their respective
+                    policies, terms of service and regulatory requirements.
+                    References to third-party services do not constitute
+                    a guarantee of their safety, licensing status or
+                    availability in any particular region.
+                </p>
+
+                <p>
+                    Any applicable commercial, promotional or referral
+                    relationships must be clearly disclosed alongside
+                    the relevant content. Users should independently
+                    evaluate external services and ensure that their
+                    participation complies with applicable laws.
+                </p>
+
+                <p>
+                    For additional information or clarification regarding
+                    our website and its external relationships, please
+                    visit our <a href="contact.html">Contact Information</a>
+                    page.
+                </p>
+
+
+                <h2>8. Advertising and Platform Compliance</h2>
+
+                <p>
+                    Advertising and promotional activities
+                    must comply with applicable laws and the
+                    requirements of the relevant advertising
+                    platforms.
+                </p>
+
+                <p>
+                    Gambling-related advertising may require
+                    specific authorization or may be prohibited
+                    depending on the service and target
+                    jurisdiction.
+                </p>
+
+                <p>
+                    This website must not be used to conceal
+                    restricted services, misrepresent destination
+                    links or circumvent advertising platform
+                    review processes.
+                </p>
+
+                <p>
+                    The presence of these legal disclosures
+                    does not constitute approval, certification
+                    or endorsement by Facebook, Instagram,
+                    Meta or any regulatory authority.
+                </p>
+
+
+                <h2>9. Privacy and Digital Security</h2>
+
+                <p>
+                    Users should exercise caution when sharing
+                    personal information online and independently
+                    verify the authenticity of websites and
+                    support representatives.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Never share passwords or one-time
+                        passwords with unauthorized individuals.
+                    </li>
+
+                    <li>
+                        Protect banking credentials and
+                        confidential personal information.
+                    </li>
+
+                    <li>
+                        Review the privacy practices of
+                        external platforms.
+                    </li>
+
+                    <li>
+                        Report suspicious communications
+                        or unauthorized activity.
+                    </li>
+
+                </ul>
+
+                <p>
+                    For additional information, please review
+                    our <a href="privacy-policy.html">
+                        Privacy Policy
+                    </a>.
+                </p>
+
+
+                <h2>10. Recognizing Problematic Gaming Behavior</h2>
+
+                <p>
+                    Users should consider reducing or stopping
+                    participation if gaming or gambling begins
+                    to negatively affect their wellbeing.
+                </p>
+
+                <p>
+                    Potential warning signs include:
+                </p>
+
+                <ul>
+
+                    <li>
+                        Difficulty controlling participation
+                        or time spent gaming.
+                    </li>
+
+                    <li>
+                        Neglecting personal or professional
+                        responsibilities.
+                    </li>
+
+                    <li>
+                        Experiencing emotional distress
+                        related to gaming activities.
+                    </li>
+
+                    <li>
+                        Spending beyond personal financial limits.
+                    </li>
+
+                    <li>
+                        Continuing participation despite
+                        harmful consequences.
+                    </li>
+
+                </ul>
+
+
+                <!-- SUPPORT BOX -->
+
+                <div class="support-box">
+
+                    <h2>11. Help and Support</h2>
+
+                    <p>
+                        If gaming or gambling negatively affects
+                        your mental health, financial circumstances
+                        or everyday life, consider stopping
+                        participation and seeking assistance.
+                    </p>
+
+                    <p>
+                        Speak with a trusted individual,
+                        qualified healthcare professional
+                        or appropriate addiction support service.
+                    </p>
+
+                    <p>
+                        Where available, consider using legitimate
+                        self-exclusion tools, spending restrictions
+                        and account access controls.
+                    </p>
+
+                    <p>
+                        For website-related concerns, please
+                        visit our
+                        <a href="contact.html">
+                            Contact Information
+                        </a>
+                        page.
+                    </p>
+
+                </div>
+
+
+                <h2>12. Intellectual Property Disclosures</h2>
+
+                <p>
+                    Third-party game titles, trademarks, logos,
+                    characters and brand assets belong to
+                    their respective owners.
+                </p>
+
+                <p>
+                    Illustrative and AI-generated gaming artwork
+                    does not represent official gameplay or
+                    establish affiliation with a game developer
+                    or publisher.
+                </p>
+
+
+                <h2>13. Updates to These Disclosures</h2>
+
+                <p>
+                    This page may be updated periodically to
+                    reflect changes in applicable laws,
+                    regulatory requirements, website functionality
+                    or commercial relationships.
+                </p>
+
+                <p>
+                    Users are encouraged to review the latest
+                    version of this page alongside our
+                    <a href="terms-and-conditions.html">
+                        Terms and Conditions
+                    </a>
+                    and
+                    <a href="disclaimers.html">
+                        Disclaimer
+                    </a>.
+                </p>
+
+
+                <div class="legal-notice">
+
+                    <h3>
+                        Stay Informed. Play Responsibly.
+                    </h3>
+
+                    <p>
+                        Personal wellbeing, informed decisions,
+                        transparency and legal compliance should
+                        always come first when engaging with
+                        digital entertainment.
+                    </p>
+
+                </div>
+
+
+                <!-- BACK TO HOME -->
+
+                <div class="policy-back">
+
+                    <a href="index.html">
+                        ← Back to Homepage
+                    </a>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer" id="contact">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+
+                    <a href="index.html" class="logo" aria-label="Homepage">
+
+                        <img src="images/logo.png" alt="Gaming controller logo">
+
+                    </a>
+
+                    <p>
+                        Explore gaming information, digital
+                        entertainment and responsible
+                        participation.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>Quick Links</h4>
+
+                    <a href="privacy-policy.html">
+                        Privacy Policy
+                    </a>
+
+                    <a href="terms-and-conditions.html">
+                        Terms and Conditions
+                    </a>
+
+                    <a href="disclaimers.html">
+                        Disclaimers
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>Information</h4>
+
+                    <a href="contact.html">
+                        Contact Information
+                    </a>
+
+                    <a href="about.html">
+                        About Us
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>Responsible Gaming</h4>
+
+                    <a href="responsible-gaming.html" aria-current="page">
+
+                        Responsible Gaming and Legal Disclosures
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; <span id="year"></span>.
+                    All rights reserved.
+                </p>
+
+                <a href="index.html">
+                    Back to Homepage ↑
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
